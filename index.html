@@ -20,7 +20,7 @@
   <body>
     <!--header-->
 
-    <!-- <header class="main-header">
+    <header class="main-header">
       <div class="container top-header">
         <nav class="page-nav">
           <a class="main logo link" href="./index.html"
@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-open-btn" type="button">
+        <button class="mobile-menu-open-btn" type="button" data-menu-open>
           <svg
             class="mobile-menu-open-button-icon"
             width="24"
@@ -56,34 +56,34 @@
         <address class="address-list">
           <ul class="address-info">
             <li>
-              <a class="address-item link" href="mailto:info@devstudio.com"
+              <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="address-item link" href="tel:+110001111111"
+              <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
       </div>
-    </header>-->
+    </header>
     <main>
       <!--hero-->
-      <!--<section class="top-section">
+      <section class="top-section">
         <div class="container">
           <h1 class="top-title effective-solution-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="jump text click-button" type="button">
+          <button class="jump text click-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>-->
+      </section>
 
       <!--feature-->
-      <!--<section class="features">
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Our features</h2>
           <ul class="features-list">
@@ -160,17 +160,17 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
       <!--our team-->
 
       <section class="team section">
-        <div class="team-container">
+        <div class="team-container container">
           <h2 class="second-title">Our Team</h2>
           <ul class="person-list">
             <li class="team-person">
               <img
-              srcset="./images/mark1@2x.jpg 2x"
+                srcset="./images/mark1@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -233,7 +233,7 @@
             </li>
             <li class="team-person">
               <img
-              srcset="./images/tom2@2x.jpg 2x"
+                srcset="./images/tom2@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -296,7 +296,7 @@
             </li>
             <li class="team-person">
               <img
-              srcset="./images/camila3@2x.jpg 2x"
+                srcset="./images/camila3@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -359,7 +359,7 @@
             </li>
             <li class="team-person">
               <img
-              srcset="./images/daniel4@2x.jpg 2x"
+                srcset="./images/daniel4@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -426,7 +426,7 @@
 
       <!--Our portfolio-->
 
-      <!--<section class="portfolio-list-section">
+      <section class="section portfolio-list-section">
         <div class="container">
           <h2 class="second-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -434,22 +434,33 @@
               <div class="banking-item">
                 <picture>
                   <source
-                                    srcset="./images/desktop/banking.jpg 1x, ./images/desktop/banking@2x.jpg 2x"
-                                    media="(min-width: 1158px)" />
-                                <source
-                                    srcset="./images/tablet/banking.jpg 1x, ./images/tablet/banking@2x.jpg 2x"
-                                    media="(min-width: 768px)" />
-                                <source
-                                    srcset="./images/mobile/banking.jpg 1x, ./images/mobile/banking@2x.jpg 2x"
-                                    media="(max-width: 767px)" />
-                                    <img
-                  src="./images2/banking.jpg"
-                  alt="banking"
-                  width="360"
-                  height="300"
-                />
+                    srcset="
+                      ./images/desktop/banking.jpg    1x,
+                      ./images/desktop/banking@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/banking.jpg    1x,
+                      ./images/tablet/banking@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/banking.jpg    1x,
+                      ./images/mobile/banking@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images2/banking.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
-                
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -464,23 +475,31 @@
             </li>
             <li class="portfolio-item">
               <div class="banking-item">
-                <picture> 
-                <source
-                                    srcset="./images/desktop/cashless.jpg 1x, ./images/desktop/cashless@2x.jpg 2x"
-                                    media="(min-width: 1158px)" />
-                                <source
-                                    srcset="./images/tablet/cashless.jpg 1x, ./images/tablet/cashless@2x.jpg 2x"
-                                    media="(min-width: 768px)" />
-                                <source
-                                    srcset="./images/mobile/cashless.jpg 1x, ./images/mobile/cashless@2x.jpg 2x"
-                                    media="(max-width: 767px)" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/cashless.jpg    1x,
+                      ./images/desktop/cashless@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)" />
+                  <source
+                    srcset="
+                      ./images/tablet/cashless.jpg    1x,
+                      ./images/tablet/cashless@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./images/mobile/cashless.jpg    1x,
+                      ./images/mobile/cashless@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)" />
                   <img
-                  src="./images2/cashless.jpg"
-                  alt="cashless"
-                  width="360"
-                  height="300"
+                    src="./images2/cashless.jpg"
+                    alt="cashless"
+                    width="360"
+                    height="300"
                 /></picture>
-               
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -498,22 +517,33 @@
               <div class="banking-item">
                 <picture>
                   <source
-                                    srcset="./images/desktop/meditation.jpg 1x, ./images/desktop/meditation@2x.jpg 2x"
-                                    media="(min-width: 1158px)" />
-                                <source
-                                    srcset="./images/tablet/meditation.jpg 1x, ./images/tablet/meditation@2x.jpg 2x"
-                                    media="(min-width: 768px)" />
-                                <source
-                                    srcset="./images/mobile/meditation.jpg 1x, ./images/mobile/meditation@2x.jpg 2x"
-                                    media="(max-width: 767px)" />
+                    srcset="
+                      ./images/desktop/meditation.jpg    1x,
+                      ./images/desktop/meditation@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/meditation.jpg    1x,
+                      ./images/tablet/meditation@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/meditation.jpg    1x,
+                      ./images/mobile/meditation@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  src="./images2/meditation.jpg"
-                  alt="meditation"
-                  width="360"
-                  height="300"
-                />
+                    src="./images2/meditation.jpg"
+                    alt="meditation"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
-               
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -531,23 +561,34 @@
             <li class="portfolio-item">
               <div class="banking-item">
                 <picture>
-                   <source
-                                    srcset="./images/desktop/taxi.jpg 1x, ./images/desktop/taxi@2x.jpg 2x"
-                                    media="(min-width: 1158px)" />
-                                <source
-                                    srcset="./images/tablet/taxi.jpg 1x, ./images/tablet/taxi@2x.jpg 2x"
-                                    media="(min-width: 768px)" />
-                                <source
-                                    srcset="./images/mobile/taxi.jpg 1x, ./images/mobile/taxi@2x.jpg 2x"
-                                    media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      ./images/desktop/taxi.jpg    1x,
+                      ./images/desktop/taxi@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/taxi.jpg    1x,
+                      ./images/tablet/taxi@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/taxi.jpg    1x,
+                      ./images/mobile/taxi@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  src="./images2/taxi.jpg"
-                  alt="taxi"
-                  width="360"
-                  height="300"
-                />
+                    src="./images2/taxi.jpg"
+                    alt="taxi"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
-                
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -565,23 +606,34 @@
               <div class="banking-item">
                 <picture>
                   <source
-                                    srcset="./images/desktop/screen.jpg 1x, ./images/desktop/screen@2x.jpg 2x"
-                                    media="(min-width: 1158px)" />
-                                <source
-                                    srcset="./images/tablet/screen.jpg 1x, ./images/tablet/screen@2x.jpg 2x"
-                                    media="(min-width: 768px)" />
-                                <source
-                                    srcset="./images/mobile/screen.jpg 1x, ./images/mobile/screen@2x.jpg 2x"
-                                    media="(max-width: 767px)" />
+                    srcset="
+                      ./images/desktop/screen.jpg    1x,
+                      ./images/desktop/screen@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/screen.jpg    1x,
+                      ./images/tablet/screen@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/screen.jpg    1x,
+                      ./images/mobile/screen@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
 
                   <img
-                  src="./images2/screen.jpg"
-                  alt="smartphone"
-                  width="360"
-                  height="300"
-                />
+                    src="./images2/screen.jpg"
+                    alt="smartphone"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
-                
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -598,23 +650,34 @@
             <li class="portfolio-item">
               <div class="banking-item">
                 <picture>
-                                  <source
-                                    srcset="./images/desktop/online-courses.jpg 1x, ./images/desktop/online-courses@2x.jpg 2x"
-                                    media="(min-width: 1158px)" />
-                                <source
-                                    srcset="./images/tablet/online-courses.jpg 1x, ./images/tablet/online-courses@2x.jpg 2x"
-                                    media="(min-width: 768px)" />
-                                <source
-                                    srcset="./images/mobile/online-courses.jpg 1x, ./images/mobile/online-courses@2x.jpg 2x"
-                                    media="(max-width: 767px)" />
-                    <img
-                  src="./images2/online-courses.jpg"
-                  alt="courses"
-                  width="360"
-                  height="300"
-                />
+                  <source
+                    srcset="
+                      ./images/desktop/online-courses.jpg    1x,
+                      ./images/desktop/online-courses@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/online-courses.jpg    1x,
+                      ./images/tablet/online-courses@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/online-courses.jpg    1x,
+                      ./images/mobile/online-courses@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images2/online-courses.jpg"
+                    alt="courses"
+                    width="360"
+                    height="300"
+                  />
                 </picture>
-               
 
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -630,11 +693,11 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
     </main>
 
     <!--footer-->
-    <!--<footer class="main-footer">
+    <footer class="main-footer">
       <div class="container">
         <div class="logo-container">
           <a class="main logo link footer-link" href="./index.html"
@@ -726,12 +789,11 @@
           </form>
         </div>
       </div>
-    </footer>-->
+    </footer>
 
-    <!--<div class="backdrop is-open">
-
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg
             class="modal-close-btn-icon"
             width="8"
@@ -851,19 +913,21 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-color">Privacy Policy</a>
+              <span
+                >I accept the terms and conditions of the
+                <a href="" class="privacy-color">Privacy Policy</a></span
+              >
             </label>
           </div>
           <button class="feedback-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>-->
+    </div>
 
     <!--MOBILE MENU-->
-    <!--<div class="mobile-menu-wrapper">
+    <div class="mobile-menu-wrapper" data-menu>
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close-btn" type="button">
+        <button class="mobile-menu-close-btn" type="button" data-menu-close>
           <svg
             class="mobile-menu-close-btn-icon"
             width="8"
@@ -914,11 +978,11 @@
               </li>
             </ul>
           </address>
-          <ul class="mobile-social-list">
-            <li class="mobile-social-list-item">
-              <a href="" class="mobile-social-list-link">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
                 <svg
-                  class="mobile-social-list-icon"
+                  class="social-list-icon"
                   width="24"
                   height="24"
                   aria-label="instagram"
@@ -927,10 +991,10 @@
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-list-item">
-              <a href="" class="mobile-social-list-link">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
                 <svg
-                  class="mobile-social-list-icon"
+                  class="social-list-icon"
                   width="24"
                   height="24"
                   aria-label="twitter"
@@ -939,10 +1003,10 @@
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-list-item">
-              <a href="" class="mobile-social-list-link">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
                 <svg
-                  class="mobile-social-list-icon"
+                  class="social-list-icon"
                   width="24"
                   height="24"
                   aria-label="facebook"
@@ -951,10 +1015,10 @@
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-list-item">
-              <a href="" class="mobile-social-list-link">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
                 <svg
-                  class="mobile-social-list-icon"
+                  class="social-list-icon"
                   width="24"
                   height="24"
                   aria-label="linkedin"
@@ -967,5 +1031,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
