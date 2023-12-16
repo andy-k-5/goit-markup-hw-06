@@ -731,11 +731,11 @@ body {
     min-width: 1158px;
   }
 
-  .team-items-list {
+  .person-list {
     flex-wrap: nowrap;
     gap: 24px;
   }
-  .team-list {
+  .team-person {
     width: calc((100% - 72px) / 4);
   }
 }
